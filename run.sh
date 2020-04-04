@@ -1,7 +1,7 @@
 
 #!/bin/sh
 
-if [[ -z "${token}" ]]; then
+if [[ -n "${token}" ]]; then
     echo "authentication_method = token" >> /etc/frps.ini
     echo ${token} >> /etc/frps.ini
 fi
