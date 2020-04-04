@@ -17,5 +17,6 @@ cat <<EOT >> /etc/frps.ini
 [common]
 bind_port = 7000
 bind_udp_port = 7001
-vhost_http_port = 8080
+vhost_http_port = 80
+vhost_https_port = 443
 EOT
