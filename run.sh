@@ -6,4 +6,4 @@ if [[ -z "${TOKEN}" ]]; then
     echo ${TOKEN} >> /etc/frps.ini
 fi
 
-frps -c /etc/frps.ini
+/usr/local/frps -c /etc/frps.ini
