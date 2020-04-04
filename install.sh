@@ -9,6 +9,7 @@ wget --no-check-certificate https://github.com/fatedier/frp/releases/download/v$
 -e use_proxy=yes -e http_proxy=http://192.168.1.101:7890 -O frp.tar.gz
 tar xzf frp.tar.gz
 rm -rf frp.tar.gz
+apk del wget
 
 mv frp_${FRP_VERSION}_linux_amd64/frps /usr/local/frps
 chmod +x /usr/local/frps
