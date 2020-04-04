@@ -10,4 +10,4 @@ RUN chmod +x install.sh && chmod +x run.sh && ./install.sh
 
 EXPOSE 7000 7001 80 443
 
-CMD run.sh
+CMD ./run.sh
