@@ -11,6 +11,7 @@ tar xzf frp.tar.gz
 rm -rf frp.tar.gz
 
 mv frp_${FRP_VERSION}_linux_amd64/frps /usr/local/frps
+chmod +x /usr/local/frps
 rm frp_* -rf
 
 cat <<EOT >> /etc/frps.ini
